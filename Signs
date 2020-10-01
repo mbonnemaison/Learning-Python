@@ -1,19 +1,19 @@
 """
 Instructions:
 def sign(n):
-    """
+
     Return the 'sign' of the number as a string
     sign(-5) = "-"
     sign(0) = "0"
     sign(18) = "+"
-    """
+    
     raise Exception("TODO")
 """
 
 def sign(i):
 	if i<0:
 		return "-"
-	if i == 0:
+	elif i == 0:
 		return "0"
 	else:
 		return "+"
