@@ -10,10 +10,19 @@ def sign(n):
     raise Exception("TODO")
 """
 
-def sign(i):
-	if i<0:
-		return "-"
-	elif i == 0:
-		return "0"
-	else:
-		return "+"
+def sign(n):
+    if not (isinstance(n, int) or isinstance(n, float)):
+        raise TypeError("expected int or float, got {}".format(type(n)))
+    if n == 0:
+        print("0")
+    elif n > 0:
+        print("+")
+    else:
+        print("-")
+
+sign_test_cases = [9, 0, -4, 4.5, "Matt"]
+for x in sign_test_cases:
+    try:
+        sign(x)
+    except TypeError as e:
+        print(e)
