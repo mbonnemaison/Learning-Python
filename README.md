@@ -1,7 +1,7 @@
 # Learning-Python
 Simple programs to learn Python
 
-Thank you Matt for creating those programs!
+Thank you Matt for creating those instructions!
 
 Each file is divided in 3 parts:
 1. The instructions for the program to write (surrounded by """)
