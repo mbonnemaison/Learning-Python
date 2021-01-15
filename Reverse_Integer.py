@@ -53,3 +53,28 @@ class Solution:
 #Examples to test the code:
 s = Solution()
 print(s.reverse(x=23))
+
+#==============================================================================
+"""
+#Tricks
+k = 1234
+kstr = str(k) #the output will be "1234"
+krev = kstr[::-1] #the output will be "4321"
+
+l = -1234
+lstr = str(-l) #the output will be "1234"
+lstr2 = str(-l) + "-" #the output will be "4321-"
+
+#2**31 means 2^31
+
+#Example of a better solution:
+class Solution:
+    def reverse(self, x):
+        r = str(x) if x>0 else str(-x) + '-'
+        rev = r[::-1]
+        return int(rev) if -2**31 <= int(rev) <= 2**31 + 1 else 0
+
+s = Solution()
+print(s.reverse(x=2345678999))
+
+"""
