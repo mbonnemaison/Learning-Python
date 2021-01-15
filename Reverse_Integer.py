@@ -56,7 +56,7 @@ print(s.reverse(x=23))
 
 #==============================================================================
 """
-#Tricks
+#Tools learnt after submitting my code above
 k = 1234
 kstr = str(k) #the output will be "1234"
 krev = kstr[::-1] #the output will be "4321"
