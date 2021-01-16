@@ -38,11 +38,9 @@ class Solution:
 s = Solution()
 print(s.isPalindrome(x=10))
 
-
-
 #===============================================================================
 """
-Original submission of my code on Leetcode:
+Original sbmitted code:
 class Solution:
     def isPalindrome(self, x):
         x_str = str(x)
@@ -56,6 +54,7 @@ class Solution:
 s = Solution()
 print(s.isPalindrome(x=10))
 
+#===============================================================================
 #The following 2 if/else expressions are equivalent to the if/else statement above:
 #return True if x_str == y else False
 #return x_str == y
