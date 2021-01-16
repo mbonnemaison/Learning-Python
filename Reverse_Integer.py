@@ -29,6 +29,32 @@ class Solution:
     def reverse(self, x: int) -> int:
 
 """
+#This is the final code I submitted. See at the end of document for original code.
+class Solution:
+    def reverse(self, x):
+        r = str(x) if x>0 else str(-x) + '-'
+        rev = r[::-1]
+        return int(rev) if -2**31 <= int(rev) <= 2**31 + 1 else 0
+
+#Examples to test the code:
+s = Solution()
+print(s.reverse(x=2345678999))
+
+#==============================================================================
+"""
+#Tools learnt after submitting my original code
+k = 1234
+kstr = str(k) #the output will be "1234"
+krev = kstr[::-1] #the output will be "4321"
+
+l = -1234
+lstr = str(-l) #the output will be "1234"
+lstr2 = str(-l) + "-" #the output will be "4321-"
+
+#2**31 means 2^31
+
+#==============================================================================
+#Original submitted code:
 class Solution:
     def reverse(self, x):
         y = str(abs(x))
@@ -53,28 +79,5 @@ class Solution:
 #Examples to test the code:
 s = Solution()
 print(s.reverse(x=23))
-
-#==============================================================================
-"""
-#Tools learnt after submitting my code above
-k = 1234
-kstr = str(k) #the output will be "1234"
-krev = kstr[::-1] #the output will be "4321"
-
-l = -1234
-lstr = str(-l) #the output will be "1234"
-lstr2 = str(-l) + "-" #the output will be "4321-"
-
-#2**31 means 2^31
-
-#Example of a better solution:
-class Solution:
-    def reverse(self, x):
-        r = str(x) if x>0 else str(-x) + '-'
-        rev = r[::-1]
-        return int(rev) if -2**31 <= int(rev) <= 2**31 + 1 else 0
-
-s = Solution()
-print(s.reverse(x=2345678999))
 
 """
