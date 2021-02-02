@@ -6,11 +6,6 @@ More information on the data:
 - [power data](https://assets.rte-france.com/prod/public/2020-07/%C3%A9CO2mix%20-%20Description%20des%20fichiers%20des%20donn%C3%A9es%20en%20puissance.pdf)
 - [energy data](https://assets.rte-france.com/prod/public/2020-07/%C3%A9CO2mix%20-%20Description%20des%20fichiers%20des%20donn%C3%A9es%20en%20%C3%A9nergie.pdf)
 
-In "Energy France Real Time" file:
-- units are in megawatt (MW)
-- CO2 rate is in gram per kilowatt-hour (kWh)
-- CCGT = Combine Cycle Gas Turbine
-- exchange [country] means export (France --> [country]) if number is positive; otherwise it is an import
+In "Energy France Real Time" file, units are in megawatt (MW).
 
-In "Energy France Yearly" file:
-- units are in terawatt hour (TWh)
+In "Energy France Yearly" file, units are in terawatt hour (TWh).
